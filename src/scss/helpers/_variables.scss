@@ -1,0 +1,27 @@
+//** Vars for fonts
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+
+$heading_font: "DM Serif Display", serif;
+$heading_weight: 400;
+
+$body_font: "Karla", sans-serif;
+
+//** Vars for media query mixins
+
+$mqTerm: "only screen";
+$bp-xl: "min-width: 1200px";
+$bp-lg: "min-width: 992px";
+$bp-md: "min-width: 768px";
+$bp-sm: "max-width: 767px";
+
+//** Vars for colors
+
+//  Primary Colors
+$Dark_Violet: hsl(256, 26%, 20%);
+$Grayish_Blue: hsl(216, 30%, 68%);
+
+// Neutral Colors
+$Very_Dark_Violet: hsl(270, 9%, 17%);
+$Dark_Grayish_Violet: hsl(273, 4%, 51%);
+$Very_Light_Gray: hsl(0, 0%, 98%);

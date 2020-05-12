@@ -1,0 +1,54 @@
+//** Intro Btn
+.intro_btn {
+  border: 2px solid $Very_Light_Gray;
+  color: $Very_Light_Gray;
+  background-color: transparent;
+  outline: none;
+  font-weight: 400;
+  padding: 12px 30px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: $Dark_Violet;
+    background-color: $Very_Light_Gray;
+  }
+}
+
+//** How-We-Work Btn
+.how-we-work_btn {
+  border: 2px solid $Very_Light_Gray;
+  color: $Very_Light_Gray;
+  background-color: transparent;
+  outline: none;
+  font-weight: 400;
+  padding: 12px 30px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: $Dark_Violet;
+    background-color: $Very_Light_Gray;
+  }
+}
+
+//** Navbar btn
+
+.navbar_btn {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  outline: none;
+  font-weight: 700;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: $Very_Light_Gray;
+    background-color: $Very_Dark_Violet;
+  }
+  @include md {
+    border-color: $Very_Dark_Violet;
+    color: $Very_Dark_Violet;
+  }
+}

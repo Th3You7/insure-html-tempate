@@ -1,0 +1,26 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: $body_font;
+  width: 100%;
+}
+
+* {
+  @include prefixer(webkit moz o ms, box-sizing, border-box);
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+  @include md {
+    max-width: 720px;
+  }
+  @include lg {
+    max-width: 962px;
+  }
+  @include xl {
+    max-width: 1140px;
+  }
+}

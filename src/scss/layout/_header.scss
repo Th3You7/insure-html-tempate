@@ -1,0 +1,137 @@
+#header {
+  display: block;
+  width: 100%;
+  //** Styling Intro Section
+  .intro {
+    display: block;
+    width: 100%;
+    background-color: $Dark_Violet;
+    @include lg {
+      height: 550px;
+    }
+    .img_intro_mb {
+      width: 100%;
+      display: block;
+      @include md {
+        display: none;
+      }
+    }
+    .intro_content {
+      width: 100%;
+      display: block;
+      position: relative;
+      .mobile_bg_left {
+        @include md {
+          display: none;
+        }
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .mobile_bg_right {
+        @include md {
+          display: none;
+        }
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -38%;
+        z-index: 1;
+      }
+      .desktop_bg_left {
+        display: none;
+        width: 100px;
+        height: 400px;
+        @include lg {
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -50%;
+          z-index: 1;
+        }
+      }
+      .desktop_bg_right {
+        display: none;
+        width: 400px;
+        height: 500px;
+        @include lg {
+          display: block;
+          position: absolute;
+          top: 0%;
+          right: 0%;
+          z-index: 4;
+        }
+      }
+      .container {
+        .intro_content_container {
+          @include md {
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          position: relative;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          z-index: 2;
+          .intro_introduction {
+            @include md {
+              text-align: left;
+              flex: 0 1 48%;
+              position: relative;
+              z-index: 4;
+              &:before {
+                content: "";
+                width: 160px;
+                display: block;
+                height: 1px;
+                border-radius: 999px;
+                background-color: $Dark_Grayish_Violet;
+                margin: 0 0 28px;
+              }
+            }
+            text-align: center;
+            padding: 80px 12px;
+            h1 {
+              font: {
+                size: 45px;
+                family: $heading_font;
+                weight: lighter;
+              }
+              margin: 0 0 16px;
+              line-height: 1.1;
+              color: white;
+              @include lg {
+                font-size: 55px;
+              }
+            }
+            p {
+              color: $Very_Light_Gray;
+              margin: 0;
+              line-height: 1.7;
+            }
+          }
+          .intro_img {
+            display: none;
+            @include md {
+              display: block;
+              flex: 0 1 48%;
+            }
+            @include lg {
+              margin-bottom: -200px;
+            }
+            @include xl {
+              margin-bottom: -300px;
+            }
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

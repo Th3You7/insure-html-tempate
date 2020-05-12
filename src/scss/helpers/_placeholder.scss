@@ -1,0 +1,9 @@
+//** Border Placeholder
+%border {
+  content: "";
+  display: block;
+  height: 1px;
+  border-radius: 999px;
+  background-color: $Dark_Grayish_Violet;
+  margin: 0 auto 28px;
+}

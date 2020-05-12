@@ -1,0 +1,94 @@
+//** Styling Navbar
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  background: white;
+  padding: 16px 0;
+  .container {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .logo {
+        text-decoration: none;
+        img {
+          display: block;
+        }
+      }
+
+      .nav_toggle_btn {
+        display: block;
+        @include md {
+          display: none;
+        }
+        img {
+          display: block;
+          @include md {
+            display: none;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .navbar_list {
+        img {
+          display: block;
+          width: 100%;
+          @include md {
+            display: none;
+          }
+        }
+        display: none;
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 10px;
+        background-color: $Very_Dark_Violet;
+        @include md {
+          display: block;
+          padding: 0;
+          margin: 0;
+          background-color: transparent;
+          width: auto;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            display: block;
+            padding: 16px;
+            text-align: center;
+            @include md {
+              display: inline;
+              text-align: left;
+              padding: 0;
+              &:not(:last-of-type) {
+                padding-right: 16px;
+              }
+            }
+            a {
+              text-decoration: none;
+              color: white;
+              font-weight: 700;
+              transition: all 0.2s;
+
+              @include md {
+                color: $Dark_Grayish_Violet;
+                &:hover {
+                  color: $Very_Dark_Violet;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
